@@ -1,0 +1,5 @@
+create_table("user_groups") {
+	t.Column("id", "uuid", {"primary": true})
+	t.Column("user_id", "uuid", {})
+	t.Column("group_id", "uuid", {})
+})

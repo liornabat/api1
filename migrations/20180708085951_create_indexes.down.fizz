@@ -1,0 +1,2 @@
+drop_index("users", "users_username_idx")
+drop_index("groups", "groups_group_name_idx")

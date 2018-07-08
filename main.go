@@ -1,9 +1,7 @@
 package main
 
 import (
-	"log"
-
-	"poc/api1/actions"
+	"poc/api1/models"
 )
 
 // main is the starting point to your Buffalo application.
@@ -13,10 +11,16 @@ import (
 // call `app.Serve()`, unless you don't want to start your
 // application that is. :)
 func main() {
-	app := actions.App()
-	if err := app.Serve(); err != nil {
-		log.Fatal(err)
-	}
+	//app := actions.App()
+	//if err := app.Serve(); err != nil {
+	//	log.Fatal(err)
+	//}
+	models.Init()
+	//if err := models.PopulateDB(); err != nil {
+	//		log.Fatal(err)
+	//	}
+	//models.GetGroups()
+	models.GetUsers()
 }
 
 /*
